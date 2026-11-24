@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ritendrakumar Guntreddi – VC Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Ritendrakumar Guntreddi: engineer, startup builder and aspiring venture capital analyst focused on technology, AI and early-stage startups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF9F5;--surface:#F0EEE6;--text:#141413;--muted:#5E5D59;--line:#E0DDD0;
+  --clay:#D97757;--clay-ink:#B5502D;--blue:#6A9BCB;--green:#788C5D;--on-clay:#141413;
+  --head:"Poppins","Helvetica Neue",Arial,sans-serif;--body:"Lora",Georgia,"Times New Roman",serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#141413;--surface:#1F1E1D;--text:#FAF9F5;--muted:#B0AEA5;--line:#3A3936;--clay-ink:#E8906F;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#141413;--surface:#1F1E1D;--text:#FAF9F5;--muted:#B0AEA5;--line:#3A3936;--clay-ink:#E8906F;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.7 var(--body);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3,.ui{font-family:var(--head)}
+h1,h2,h3{margin:0;line-height:1.15;letter-spacing:-.01em}
+p{margin:0 0 1em}
+a{color:var(--clay-ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.6rem,4.5vw,2.25rem);margin-bottom:12px}
+.lede{color:var(--muted);max-width:62ch;margin-bottom:32px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:600 1rem var(--head);color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark{width:30px;height:30px;border-radius:8px;background:var(--clay);color:var(--on-clay);display:grid;place-items:center;font-size:.8rem}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 12px;border-radius:8px;font:500 .875rem var(--head);color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text);background:var(--surface)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;width:44px;height:44px;font-size:1.25rem;cursor:pointer}
+@media (max-width:760px){
+  .burger{display:block}
+  nav{position:absolute;left:0;right:0;top:64px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;padding:8px 12px 16px}
+  nav a{padding:14px 12px;font-size:1rem}
+}
+
+/* hero */
+.hero{padding:56px 0 64px;border-top:0}
+.tag{display:inline-block;font:500 .875rem var(--head);padding:6px 14px;border-radius:99px;background:var(--surface);border:1px solid var(--line);margin-bottom:22px}
+.tag i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:8px}
+.hero h1{font-size:clamp(2.4rem,9vw,4.75rem);font-weight:700;max-width:14ch;margin-bottom:22px}
+.hero h1 span{color:var(--clay-ink)}
+.hero p.sub{font-size:clamp(1.05rem,2.6vw,1.3rem);max-width:56ch;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 48px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:99px;font:600 .95rem var(--head);text-decoration:none;border:1.5px solid var(--text);color:var(--text)}
+.btn.main{background:var(--clay);border-color:var(--clay);color:var(--on-clay)}
+.btn:hover{transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface)}
+.stat{padding:22px 18px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:700 clamp(1.7rem,5vw,2.5rem)/1 var(--head)}
+.stat span{font-size:.9rem;color:var(--muted)}
+@media (max-width:640px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+
+/* responsibilities accordion */
+.acc{display:grid;gap:10px}
+.item{border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.item button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;gap:14px;align-items:center;padding:18px 20px;font:600 1.05rem/1.3 var(--head)}
+.item button:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.dot{flex:none;width:12px;height:12px;border-radius:50%}
+.item .chev{margin-left:auto;transition:transform .2s;color:var(--muted)}
+.item[data-open="true"] .chev{transform:rotate(180deg)}
+.panel{display:none;padding:0 20px 20px 46px}
+.item[data-open="true"] .panel{display:block}
+.panel .role{margin-bottom:12px}
+.panel .ev{border-left:3px solid var(--clay);padding-left:14px;color:var(--muted);margin:0}
+.panel .ev strong{color:var(--text);font-family:var(--head);font-weight:600;font-size:.9rem;display:block}
+@media (max-width:640px){.panel{padding-left:20px}}
+
+/* experience */
+.tl{display:grid;gap:18px}
+.card{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--surface);border-top:4px solid var(--clay)}
+.card.b{border-top-color:var(--blue)}.card.g{border-top-color:var(--green)}
+.card h3{font-size:1.2rem}
+.meta{font:500 .875rem var(--head);color:var(--muted);margin:6px 0 14px}
+.card ul{margin:0;padding-left:1.1em}
+.card li{margin-bottom:.6em}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+
+/* impact */
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.im{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--surface)}
+.im b{display:block;font:700 1.9rem/1.1 var(--head);margin-bottom:6px}
+.im span{color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.impact{grid-template-columns:1fr}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (max-width:760px){.skills{grid-template-columns:1fr}}
+.sk h3{font-size:1.05rem;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font:500 .85rem var(--head);padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
+
+/* contact */
+.contact{background:var(--text);color:var(--bg);border-radius:24px;padding:clamp(28px,6vw,56px)}
+.contact h2{color:var(--bg)}
+.contact p{color:var(--line);max-width:52ch}
+.contact .btn{border-color:var(--bg);color:var(--bg)}
+.contact .btn.main{background:var(--clay);border-color:var(--clay);color:#141413}
+footer{padding:32px 0 48px;color:var(--muted);font:400 .875rem var(--head);text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><span class="mark">RG</span>Ritendrakumar Guntreddi</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#role">VC role</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <span class="tag ui"><i></i>Open to VC Analyst roles · Bengaluru, India</span>
+    <h1>Venture capital analyst who has <span>built</span> the startups too.</h1>
+    <p class="sub">Two years of engineering and two startup ventures across AI, creator commerce and education. I bring a builder’s lens to sourcing, technical diligence and early-stage market research.</p>
+    <div class="btns">
+      <a class="btn main" href="#role">See how I map to the role</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+    <div class="stats" aria-label="Key numbers">
+      <div class="stat"><b data-n="2" data-s="">0</b><span>startup ventures built</span></div>
+      <div class="stat"><b data-n="10" data-s="+">0</b><span>clients served</span></div>
+      <div class="stat"><b data-n="60" data-s="+">0</b><span>sellers onboarded</span></div>
+      <div class="stat"><b data-n="500" data-s="+">0</b><span>learners reached</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="role">
+  <div class="wrap">
+    <h2>What a VC analyst does, and where I’ve done it</h2>
+    <p class="lede">An analyst finds startups, tests them and helps the partners decide. Select a responsibility to see the experience behind it.</p>
+    <div class="acc" id="acc"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Venture building and engineering</h2>
+    <p class="lede">Product, customer and technology work from first problem to live users.</p>
+    <div class="tl">
+      <article class="card">
+        <h3>AI Engineer &amp; Venture / Product Builder</h3>
+        <p class="meta">Evolsyn Software Solutions LLP · Aug 2025 – Present · Bengaluru</p>
+        <ul>
+          <li><strong>QuickPlate AI (restaurant technology):</strong> led architecture and MVP of an AI-powered QR ordering agent that links live menus, conversational ordering, carts and POS systems. Worked with U.S. restaurant requirements and pilot deployments.</li>
+          <li><strong>Lookartz (creator commerce):</strong> built and launched a zero-commission creator-commerce platform, now on Google Play. Reached 60+ sellers and 200+ product listings.</li>
+          <li>Supported discovery and delivery across client AI engagements, learning solution positioning, trade-offs and commercial requirements.</li>
+        </ul>
+      </article>
+      <article class="card g">
+        <h3>Founder &amp; Program Builder</h3>
+        <p class="meta">InternForage · Early-stage venture · Education technology, India</p>
+        <ul>
+          <li>Founded an AICTE-approved education and industry-readiness initiative with college programs reaching 500+ students and 100+ faculty.</li>
+          <li>Generated INR 10K+ in institutional revenue while validating demand and executing with limited resources.</li>
+        </ul>
+      </article>
+      <article class="card b">
+        <h3>Software Engineer, Enterprise Applications</h3>
+        <p class="meta">CGI Information Systems · Aug 2024 – Aug 2025 · Bengaluru</p>
+        <ul>
+          <li>Validated data integrity and REST API integrations for enterprise application and content-migration programs, using Jira and Azure DevOps.</li>
+          <li>Built an LLM-assisted API test tool with Python, FastAPI, LangChain and Azure OpenAI that generates test scenarios from OpenAPI specs.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Additional product and AI building</h3>
+        <p class="meta">Prototypes beyond the flagship ventures</p>
+        <ul>
+          <li><strong>Auxilator:</strong> enterprise knowledge-retrieval assistant using embeddings and vector search.</li>
+          <li><strong>HR Intelligence System:</strong> resume screening and recruiter workflows.</li>
+          <li><strong>Rev-AI:</strong> code-repository intelligence tool.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <h2>Impact and recognition</h2>
+    <p class="lede">Measured outcomes from QuickPlate pilot workflows.</p>
+    <div class="impact">
+      <div class="im"><b>35+ → &lt;7 min</b><span>Reported ordering time</span></div>
+      <div class="im"><b>2.5% → 5.5%</b><span>Buyer conversion</span></div>
+      <div class="im"><b>15–35%</b><span>Average-order-value uplift</span></div>
+    </div>
+    <div class="cols">
+      <div class="card b"><h3>Research publication</h3><p class="meta">MDPI Engineering Proceedings · Aug 2024</p><p style="margin:0">Published research on an automated cleaning system for renewable-energy applications.</p></div>
+      <div class="card g"><h3>Agri-Hack winner</h3><p class="meta">District level</p><p style="margin:0">Won for a solution focused on sustainable agricultural technology.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Capabilities</h2>
+    <p class="lede">The skills I would use on day one as an analyst.</p>
+    <div class="skills">
+      <div class="card sk"><h3>Venture and business</h3><div class="chips"><span>Customer discovery</span><span>Product-market validation</span><span>Business models</span><span>GTM execution</span><span>Stakeholder engagement</span></div></div>
+      <div class="card b sk"><h3>Technology assessment</h3><div class="chips"><span>AI / ML</span><span>LLMs</span><span>RAG</span><span>SaaS architecture</span><span>APIs</span><span>Cloud platforms</span><span>Feasibility</span></div></div>
+      <div class="card g sk"><h3>Research and analysis</h3><div class="chips"><span>Market research</span><span>Competitor mapping</span><span>Problem analysis</span><span>Positioning</span><span>Robotics</span><span>Clean energy</span></div></div>
+      <div class="card sk"><h3>Product execution</h3><div class="chips"><span>Product strategy</span><span>MVP development</span><span>Requirements analysis</span><span>Cross-functional work</span><span>Startup operations</span></div></div>
+    </div>
+    <p class="meta" style="margin-top:28px"><strong>Education:</strong> B.Tech in Computer Engineering, Vignan’s Institute of Information Technology, Visakhapatnam · May 2024 · CGPA 8.00/10</p>
+  </div>
+</section>
+
+<section id="contact" style="border-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let’s talk about your next investment analyst hire</h2>
+      <p>I’m looking for a VC analyst or investment associate role in technology, AI and early-stage startups. Email is the fastest way to reach me.</p>
+      <div class="btns" style="margin-bottom:0">
+        <a class="btn main" href="mailto:ritendraguntreddi@gmail.com">Email me</a>
+        <a class="btn" href="tel:+919704839545">+91 97048 39545</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Ritendrakumar Guntreddi</footer>
+
+<script>
+(function(){
+  var R=[
+    {t:"Deal sourcing",c:"var(--clay)",r:"Find promising startups through networks, events, outreach and research, and keep a healthy pipeline.",e:"Founder-led outreach",d:"Ran institutional outreach for InternForage and onboarded 60+ sellers for Lookartz, so I know how to open doors with limited resources."},
+    {t:"Screening and market research",c:"var(--blue)",r:"Size markets, map competitors and test whether a company fits the fund’s thesis.",e:"Research and positioning",d:"Market research, competitor mapping and product positioning for each venture, plus research exposure to robotics and clean energy."},
+    {t:"Technical and product due diligence",c:"var(--green)",r:"Judge whether the technology works, scales and can be defended.",e:"Hands-on engineering depth",d:"Led QuickPlate AI’s architecture and built LLM, RAG and vector-search products (Auxilator, HR Intelligence System, Rev-AI). I can spot feasibility gaps and real trade-offs."},
+    {t:"Traction and financial analysis",c:"var(--clay)",r:"Read the metrics behind a pitch: growth, conversion, unit economics and revenue quality.",e:"Metrics I have tracked",d:"Ordering time cut from 35+ to under 7 minutes, conversion up from 2.5% to 5.5%, order value up 15–35%, 200+ listings and INR 10K+ institutional revenue."},
+    {t:"Investment memos and communication",c:"var(--blue)",r:"Turn findings into clear write-ups and recommendations for partners.",e:"Writing and reporting",d:"Communicated technical findings in an enterprise delivery team and published peer-reviewed research in MDPI Engineering Proceedings."},
+    {t:"Founder and portfolio support",c:"var(--green)",r:"Help portfolio companies with go-to-market, hiring, customers and follow-on planning.",e:"Client and pilot work",d:"Served 10+ clients, ran restaurant pilots in the U.S. and handled GTM, customer requirements and seller onboarding as a builder."}
+  ];
+  var acc=document.getElementById("acc");
+  R.forEach(function(x,i){
+    var d=document.createElement("div");d.className="item";d.dataset.open=i===0?"true":"false";
+    d.innerHTML='<h3 style="font-size:inherit"><button type="button" aria-expanded="'+(i===0)+'" aria-controls="p'+i+'"><span class="dot" style="background:'+x.c+'"></span>'+x.t+'<span class="chev" aria-hidden="true">▾</span></button></h3><div class="panel" id="p'+i+'"><p class="role">'+x.r+'</p><p class="ev"><strong>'+x.e+'</strong>'+x.d+'</p></div>';
+    d.querySelector("button").addEventListener("click",function(){
+      var o=d.dataset.open!=="true";
+      acc.querySelectorAll(".item").forEach(function(n){n.dataset.open="false";n.querySelector("button").setAttribute("aria-expanded","false")});
+      d.dataset.open=o;this.setAttribute("aria-expanded",o);
+    });
+    acc.appendChild(d);
+  });
+
+  var nav=document.getElementById("nav"),bg=document.getElementById("burger");
+  bg.addEventListener("click",function(){var o=nav.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"});
+  nav.addEventListener("click",function(e){if(e.target.tagName==="A"){nav.classList.remove("open");bg.setAttribute("aria-expanded","false");bg.textContent="☰"}});
+
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+  var calm=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  document.querySelectorAll("[data-n]").forEach(function(el){
+    var n=+el.dataset.n,s=el.dataset.s||"";
+    if(calm){el.textContent=n+s;return}
+    var t0=null;
+    function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(p===1?s:"");if(p<1)requestAnimationFrame(f)}
+    requestAnimationFrame(f);
+  });
+})();
+</script>
+</body>
+</html>
