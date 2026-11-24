@@ -3,12 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html">
   <title>Ritendrakumar Guntreddi – VC Analyst Portfolio</title>
-  <link rel="canonical" href="Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html">
 </head>
 <body>
-  <p>Loading portfolio… If you are not redirected, <a href="Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html">open the portfolio</a>.</p>
-  <script>window.location.replace("Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html" + window.location.search + window.location.hash);</script>
+  <p id="status">Loading portfolio…</p>
+  <script>
+    fetch("Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html")
+      .then(function (response) {
+        if (!response.ok) throw new Error("Portfolio could not be loaded.");
+        return response.text();
+      })
+      .then(function (html) {
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(function () {
+        document.getElementById("status").innerHTML =
+          'Portfolio failed to load. <a href="Ritendrakumar%20Guntreddi%20%E2%80%93%20VC%20Analyst%20Portfolio.html">Open it here</a>.';
+      });
+  </script>
 </body>
 </html>
